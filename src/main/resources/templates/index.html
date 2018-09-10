@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>hello body<span th:if="${session.user != null}" th:text="${session.user.username}"></span> </h1>
+<a href="/login">Login</a>
+</body>
+</html>
